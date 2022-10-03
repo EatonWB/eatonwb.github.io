@@ -2,36 +2,46 @@
 <!DOCTYPE=html>
 <html lang="en">
 <head>
-	<title>Science Project Brewing Company Pizza</title>
+    <title>Science Project Brewing Company Pizza</title>
 	<style>
 	html * {
-	font-family: Copperplate
+	font-family: 'Times New Roman', Times, serif
 	}
 	</style>
-	<body bgcolor="#FFE13C">
+	<body bgcolor="#FFD580">
 	<form>
 		<h1>Science Project Brewing Company Pizza</h1>
 			<h2>Customer Information</h2>
 				<table border=2>
 					<tr>
 						<td>First Name</td>
-						<td><I>blank</I></td>
+						<td><input type="text" name="firstname" value="John"
+							size=50></td>
 					</tr>
 					<tr>
 						<td>Last Name</td>
-						<td><I>blank</I></td>
+						<td><input type="text" name="lastname" value="Smith"
+							size=50></td>
 					</tr>
 					<tr>
 						<td>Phone Number</td>
-						<td><I>blank</I></td>
+						<td><input type="text" name="phonenumber" value="(xxx) xxx-xxxx"
+							size=50></td>
 					</tr>
 					<tr>
 						<td>Street Address</td>
-						<td><I>blank</I></td>
+						<td><input type="text" name="streetaddress" value="611 North St, Logansport, IN 46947"
+							size=50></td>
 					</tr>
 				</table>
 			<h2>Delivery</h2>
+				<INPUT TYPE=RADIO NAME="delivery" VALUE="delivery"> Delivery
+				<INPUT TYPE=RADIO NAME="delivery" VALUE="pickup"> Pickup
+				<INPUT TYPE=RADIO NAME="delivery" VALUE="dinein"> Dine-in
 			<h2>Pizza Style</h2>
 			<h2>Crust Style</h2>
+				<INPUT TYPE=RADIO NAME="cruststyle" VALUE="thin"> Thin
+				<INPUT TYPE=RADIO NAME="cruststyle" VALUE="regular"> Regular
+				<INPUT TYPE=RADIO NAME="cruststyle" VALUE="thick"> Thick
 			<h2>Toppings</h2>
 	</body>
