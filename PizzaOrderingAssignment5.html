@@ -1,0 +1,99 @@
+<!-- Wesley Eaton, October 11,2022, Assignment 4 Pizza Ordering -->
+<!DOCTYPE=html>
+<html lang="en">
+<head>
+	<style>
+		h2
+		{
+			font-family:Verdana, Geneva, Tahoma, sans-serif;
+			text-shadow: 2px 2px black;
+		}
+		h3
+		{
+			font-family:Verdana, Geneva, Tahoma, sans-serif;
+			font-size:small;
+			text-shadow: 2px 2px black;
+		}
+		body
+		{
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: smaller;
+			color:aliceblue;
+		}
+		body
+		{
+ 			background-image: url('SPBC.webp');
+ 			background-repeat: no-repeat;
+			background-attachment: fixed;
+ 			background-size:99.5% 100%;
+		}	
+	</style>
+</head>
+    <title>Science Project Brewing Company Pizza</title>
+	<body bgcolor="#F5F5F5">
+	<form>
+		<h1 style="text-align:center; font-family:Verdana, Geneva, Tahoma, sans-serif; color:gold; text-shadow: 2px 2px black;">Science Project Brewing Company Pizza</h1>
+		<!-- Text shadow command from W3 Schools -->
+			<h2>Customer Information</h2>
+				<table border=1>
+					<tr>
+						<td>First Name</td>
+						<td><input type="text" name="firstname" value="John"
+							size=50></td>
+					</tr>
+					<tr>
+						<td>Last Name</td>
+						<td><input type="text" name="lastname" value="Smith"
+							size=50></td>
+					</tr>
+					<tr>
+						<td>Phone Number</td>
+						<td><input type="text" name="phonenumber" value="(xxx) xxx-xxxx"
+							size=50></td>
+					</tr>
+					<tr>
+						<td>Street Address</td>
+						<td><input type="text" name="streetaddress" value="611 North St, Logansport, IN 46947"
+							size=50></td>
+					</tr>
+				</table>
+		<h2>Pizza Size</h2>
+			<label for="size">Choose a Size:</label>
+			<br><SELECT NAME="choices" id="size" SIZE=4 MULTIPLE>
+				<option>Small</option>
+				<option>Medium</option>
+				<option>Large</option>
+				<option>Extra Large</option>
+			</SELECT>
+		<h2>Crust Style</h2>
+			<INPUT TYPE=RADIO NAME="cruststyle" VALUE="thin"> Thin
+			<INPUT TYPE=RADIO NAME="cruststyle" VALUE="regular"> Regular
+			<INPUT TYPE=RADIO NAME="cruststyle" VALUE="thick"> Thick
+		<h2>Toppings</h2>
+			<h3>Standard Toppings</h4>
+				<INPUT TYPE=CHECKBOX NAME="balsamic" VALUE="balsamic"> Balsamic
+				<INPUT TYPE=CHECKBOX NAME="arugala" VALUE="arugala"> Arugala
+				<INPUT TYPE=CHECKBOX NAME="bbqchicken" VALUE="bbqchicken"> BBQ Chicken
+				<INPUT TYPE=CHECKBOX NAME="onion" VALUE="onion"> Onion
+				<INPUT TYPE=CHECKBOX NAME="gouda" VALUE="gouda"> Gouda
+				<INPUT TYPE=CHECKBOX NAME="mushroom" VALUE="mushroom"> Mushroom
+				<INPUT TYPE=CHECKBOX NAME="mozzarela" VALUE="mozzarela"> Mozzarella
+				<INPUT TYPE=CHECKBOX NAME="basil" VALUE="basil"> Basil
+				<INPUT TYPE=CHECKBOX NAME="tomatoslices" VALUE="tomatoslices"> Tomato Slices
+			<h3>Premium Toppings (+$1.50)</h4>
+				<INPUT TYPE=CHECKBOX NAME="steak" VALUE="steak"> Steak
+				<INPUT TYPE=CHECKBOX NAME="gorgonzola" VALUE="gorgonzola"> Gorgonzola
+				<INPUT TYPE=CHECKBOX NAME="bacon" VALUE="bacon"> Bacon
+		<h2>Delivery</h2>
+			<INPUT TYPE=RADIO NAME="delivery" VALUE="delivery"> Delivery
+			<INPUT TYPE=RADIO NAME="delivery" VALUE="pickup"> Pickup
+			<INPUT TYPE=RADIO NAME="delivery" VALUE="dinein"> Dine-in
+			<br><TEXTAREA NAME="comments" ROWS=6 COLS=40>Please enter any special delivery instructions here.
+			</TEXTAREA>
+		<br><br><input type="submit" value="Submit Order">
+		<br><input type="reset" value="Clear">
+	</form>
+	</body>
+</head>
+</html>
+
