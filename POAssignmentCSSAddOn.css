@@ -1,16 +1,16 @@
     h2
     {
         font-family:Verdana, Geneva, Tahoma, sans-serif;
-        text-shadow: 3px 3px whitesmoke;
-        color:black;
+        text-shadow: 3px 3px black;
+        color:greenyellow;
         
     }
     h3
     {
         font-family:Verdana, Geneva, Tahoma, sans-serif;
         font-size:small;
-        text-shadow: 2px 2px whitesmoke;
-        color:black;
+        text-shadow: 2px 2px black;
+        color:yellow;
     }
     body
     {
