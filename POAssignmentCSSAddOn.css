@@ -1,3 +1,4 @@
+<!-- gradient function found on https://stackoverflow.com/questions/26621513/darken-css-background-image -->    
     h2
     {
         font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -14,7 +15,7 @@
     }
     body
     {
-        background-image: url('SPBackgroundImage.jpeg');
+        background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('SPBackgroundImage.jpeg');
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size:99.5% 100%;
