@@ -1,0 +1,21 @@
+    h2
+    {
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        text-shadow: 3px 3px whitesmoke;
+        color:black;
+        
+    }
+    h3
+    {
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size:small;
+        text-shadow: 3px 3px whitesmoke;
+        color:black;
+    }
+    body
+    {
+         background-image: url('SPBackgroundImage.jpeg');
+         background-repeat: no-repeat;
+        background-attachment: fixed;
+         background-size:99.5% 100%;
+    }	
