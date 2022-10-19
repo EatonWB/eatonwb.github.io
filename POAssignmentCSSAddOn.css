@@ -25,4 +25,11 @@
     table
     {
         font-size: small;
+        border: solid 2px whitesmoke;
+        border-collapse: collapse;
+    }
+    td
+    {
+        border: solid 2px whitesmoke;
+        padding: 2px;
     }
