@@ -1,0 +1,49 @@
+<!-- Wesley Eaton, November 7, 2022, Assignment 06 Javascript Practice -->
+<!DOCTYPE=html>
+<html lang="en">
+<head>
+    <script>
+        function titlechange()
+        {
+            document.querySelector("#changeText").innerHTML = "The sport you've written is..." +
+            document.querySelector("#sport1").value;
+        }
+        function football()
+        {
+            alert("The American kind");
+        }
+        function soccer()
+        {
+            alert("Juniata has an IM of this sport!");
+        }
+        function tennis()
+        {
+            alert("Serena Williams!");
+        }
+        function glue()
+        {
+            document.querySelector("#newsport").value =
+            document.querySelector("#sport1").value +
+            " " +
+            document.querySelector("#sport2").value;
+        }
+    </script>
+</head>
+    <title>
+        Assignment06javascript
+    </title>
+        <body style="background-color:lavender;">
+            <form name="sportmasher">
+                <div id=changeText>
+                    <h2>Welcome to Sportmasher! Type in a couple of sports <i>down below:</i></h2>
+                </div><br>
+                Sport #1: <input type=text id="sport1" onchange="titlechange();"><br>
+                Sport #2: <input type=text id="sport2" onchange="glue();"><br>
+                New Sport: <input type=text id="newsport"><br><br>
+                <input type=checkbox onclick="football();">Football<br>
+                <input type=checkbox onclick="soccer();">Soccer<br>
+                <input type=checkbox onclick="tennis();">Tennis<br><br>
+                <input type="reset" value="Clear">
+            </form>
+        </body>
+</html>
