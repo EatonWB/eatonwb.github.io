@@ -1,0 +1,118 @@
+<!-- Assignment 07, Wesley Eaton, 11/14/22 -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Assignment 07</title>
+        <script>
+            var bgToggle=true;
+            function MakeLavender()
+            {
+                if (bgToggle)
+                {
+                    document.querySelector('body').style.backgroundColor="lavender";
+                    bgToggle=false;
+                }
+                else
+                {
+                    document.querySelector('body').style.backgroundColor="white";
+                    bgToggle=true;
+                }
+            }
+            function MakeGold()
+            {
+                if (bgToggle)
+                {
+                    document.querySelector('body').style.backgroundColor="gold";
+                    bgToggle=false;
+                }
+                else
+                {
+                    document.querySelector('body').style.backgroundColor="white";
+                    bgToggle=true;
+                }
+            }
+            function MakeRoyalBlue()
+            {
+                if (bgToggle)
+                {
+                    document.querySelector('body').style.backgroundColor="royalblue";
+                    bgToggle=false;
+                }
+                else
+                {
+                    document.querySelector('body').style.backgroundColor="white";
+                    bgToggle=true;
+                }
+            }
+            function Add()
+            {
+                document.querySelector("#full").value =
+                parseFloat(document.querySelector("#firstnumber").value)
+                + parseFloat(document.querySelector("#secondnumber").value);
+            }
+            function Minus()
+            {
+                document.querySelector("#full").value =
+                parseFloat(document.querySelector("#firstnumber").value)
+                - parseFloat(document.querySelector("#secondnumber").value);
+            }
+            function Multiply()
+            {
+                document.querySelector("#full").value =
+                parseFloat(document.querySelector("#firstnumber").value)
+                * parseFloat(document.querySelector("#secondnumber").value);
+            }
+            function Divide()
+            {
+                document.querySelector("#full").value =
+                parseFloat(document.querySelector("#firstnumber").value)
+                / parseFloat(document.querySelector("#secondnumber").value);
+            }
+            function Summation()
+            {
+                var sum=0;
+                var summationstart = parseInt (document.querySelector("#summationstart").value)
+                var summationend= parseInt (document.querySelector("#summationend").value);
+                for (i=summationend; i<=summationstart; i++)
+                {
+                    sum +=i;
+                }
+                document.querySelector("#sumhere").innerHTML = "Your sum is... "+sum;
+            }
+        </script>
+    </head>
+        <body>
+            <form name=assignment07>
+                <h2>Please select a <i>background color</i></h2>
+                <input type=button value="Lavender" onclick="MakeLavender();">
+                <input type=button value="Gold" onclick="MakeGold();">
+                <input type=button value="Royal Blue" onclick="MakeRoyalBlue();">
+
+                <h2>Now use this handy calculator!</h2>
+                <input type=text id="firstnumber">
+                <input type=button value="+" onclick="Add();">
+                <input type=button value="-" onclick="Minus();">
+                <input type=button value="*" onclick="Multiply();">
+                <input type=button value="/" onclick="Divide();">
+                <input type=text id="secondnumber">
+                =
+                <input type=text id="full">
+
+                <h2>Summation time!</h2>
+                The first integer you type will be the number you are <i>summing to.</i> 
+                The second integer you type will be the number that the <i>summation begins from,</i> including the number itself. 
+                Try it out!
+                <br><br>Please type an integer to sum to:
+                <input type=text id="summationstart">
+                <br>Now type an integer that starts the summation:
+                <input type=text id="summationend">
+                <br><br><input type=button value="Start Summation" onclick="Summation();">
+                <div id="sumhere">
+                    Your summation will appear here.
+                </div>
+
+                <br><br><input type="reset" value="Clear Page">
+            </form>
+        </body>
+</html>
