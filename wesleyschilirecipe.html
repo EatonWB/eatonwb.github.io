@@ -1,13 +1,26 @@
+<!-- Image edits made with help from W3Schools -->
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <title>Soybean Chili Recipe</title>
+        <style>
+            img
+            {
+                border: 5px solid brown;
+            }
+        </style>
+        <script>
+            function chili()
+            {
+                alert("My family would often enjoy a chili dinner on weeknights, sometimes laying the chili over leftover rice.")
+            }
+        </script>
     </head>
     <body>
         <form>
-            <h1>Soybean Chili Recipe</h1><br>
-                <!-- Image edits made with help from W3Schools -->
-                <img src="signatureassignmentchili.jpg" alt="Soybean Chili" style="width:500px;height:300px;">
+            <h1>Soybean Chili Recipe</h1>
+                <img src="signatureassignmentchili.jpg" alt="Soybean Chili" style="width:500px;height:300px;"><br>
+                <i>Image source same as link at bottom</i><br><br>
             <h2>The Ingredients <i>(check off ingredients as needed):</i></h2>
             <p>
                 <b>Shared Ingredients:</b><br>
@@ -32,6 +45,7 @@
                     <li>Add the chili over rice</li>
                 </ol>
             </p>
+            <input type="button" name="explanation" value="Click here to learn more about this chili recipe!" onclick="chili();"><br><br>
             <a href="https://www.vegkitchen.com/vegetarian-chili-corn-soy-beans/">Link to original recipe</a>
         </form>
     </body>
