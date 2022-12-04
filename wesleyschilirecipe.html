@@ -27,6 +27,11 @@
             {
                 alert("My family would often enjoy a chili dinner on weeknights, sometimes laying the chili over leftover rice--that's where I got the idea for this recipe!")
             }
+            function addingredient()
+            {
+                document.querySelector("#addedingredient").innerHTML =
+                document.querySelector("#ingredient").value;
+            }
         </script>
     </head>
     <body>
@@ -46,9 +51,13 @@
                     <input type="checkbox" name="tomato" value="tomato">Tomato - 2 tomatoes, sliced<br>
                     <input type="checkbox" name="tomatopaste" value="tomatopaste">Tamato Paste - 3 tbsp<br>
                     <input type="checkbox" name="paprika" value="paprika">Paprika - 2 tsps<br>
-                    <input type="checkbox" name="sugar" value="sugar">Sugar - 1 tbsp<br><br>
+                    <input type="checkbox" name="sugar" value="sugar">Sugar - 1 tbsp<br>
+                    <input type="checkbox" name="addedingredient" value="addedingredient">Use this checkbox for your added ingredient
+                        <div id="addedingredient">
+                            Type below an ingredient you would like to add!
+                        </div><br><br>
                 <input type="reset" name="reset" value="Click here to reset your selections"><br><br>
-                <input type="text" id="ingredient" value="Type an ingredient here to add it to the recipe!" size="50" onchange="addingredient();">
+                <input type="text" id="ingredient" value="Type an ingredient here to add it to the recipe (press tab when ready)!" size="63" onchange="addingredient();">
             </p>
             <h2>The Recipe:</h2>
             <p>
