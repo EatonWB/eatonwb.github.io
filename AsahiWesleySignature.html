@@ -6,7 +6,7 @@
         <style>
             body
             {
-                background-color: snow;
+                background-color: #fffafa;
             }
             table
             {
@@ -30,12 +30,30 @@
                 font-size: medium;
             }
         </style>
+        <script>
+            var bgToggle=true;
+            function imagereveal()
+            {
+                if (bgToggle)
+                {
+                    document.querySelector('body').style.backgroundColor="#fad1d0";
+                    bgToggle=false;
+                }
+                else
+                {
+                    document.querySelector('body').style.backgroundColor="#fffafa";
+                    bgToggle=true;
+                }
+            }
+            }
+        </script>
         <!-- Icon made with help from Geeksforgeeks -->
         <link rel = "icon" href = 
         "CultureIcon.jpg" 
                 type = "image/x-icon">
     </head>
     <body>
+        <form>
         <h1 style="color: #0047AB;">American Food Culture</h1>
             <p>
                 The culture of the food in the U.S. can best be described as undefined. With influences from the melting pot of nationalities<br>
@@ -46,6 +64,7 @@
                 However, let's take a look at how two seemingly different cuisines—Japanese and American—and some recipes to go along with them,<br>
                 delving into the commonalities between the two! Enjoy this culinary journey!
             </p>
+                <input type="button" id="imagereveal" value="Click here to show an example of American Cuisine" onlcick="imagereveal();">
         <h2>Fermented Beans (Japanese) and Soybean Chili (American)</h2>
         <table class="tablecaption" border="4">
             <caption>
@@ -60,5 +79,6 @@
                 <td>Fermented Beans and Soybean Chili</td>
                 <td>Soybeans, Rice and Green Onions</td>
             </tr>
+        </form>
     </body>
 </html>
