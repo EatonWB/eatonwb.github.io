@@ -31,18 +31,18 @@
             }
         </style>
         <script>
-            var bgToggle=true;
-            function imagereveal()
+            function americanfood()
             {
-                if (bgToggle)
+            if (document.querySelector("#american").value =="hotdog" ||
+                document.querySelector("#american").value =="Hotdog" ||
+                document.querySelector("#american").value =="hamburger" ||
+                document.querySelector("#american").value =="Hamburger")
                 {
-                    document.querySelector('body').style.backgroundColor="#fad1d0";
-                    bgToggle=false;
-                }
-                else
+                    alert("Hey, that's very American!");
+                } 
+                else 
                 {
-                    document.querySelector('body').style.backgroundColor="#fffafa";
-                    bgToggle=true;
+                    alert("Maybe you could try a hotdog or hamburger!");
                 }
             }
         </script>
@@ -61,9 +61,9 @@
                 these foods are accepted in the international community compared to how well foreign foods are accepted in the United States<br>
                 is another matter.<br><br>
                 However, let's take a look at how two seemingly different cuisines—Japanese and American—and some recipes to go along with them,<br>
-                delving into the commonalities between the two! Enjoy this culinary journey!
+                delving into the commonalities between the two! Enjoy this culinary journey!<br><br>
+                    Enter your favorite American dish:<input type="text" id="american" onchange="americanfood();">
             </p>
-                <input type="button" id="imagereveal" value="Click here to show an example of American Cuisine" onclick="imagereveal();">
         <h2>Fermented Beans (Japanese) and Soybean Chili (American)</h2>
         <table class="tablecaption" border="4">
             <caption>
