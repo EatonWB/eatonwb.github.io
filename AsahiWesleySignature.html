@@ -6,7 +6,7 @@
         <style>
             body
             {
-                background-color: #fffafa;
+                background-color: antiquewhite;
             }
             table
             {
@@ -19,7 +19,7 @@
             }
             tr:nth-child(even) 
             {
-                background-color: #f2f2f2;
+                background-color: white;
             }
             .tablecaption
             {
@@ -47,12 +47,12 @@
             }
             function japanesefood()
             {
-            if (document.querySelector("#american").value =="misosoup" ||
-                document.querySelector("#american").value =="MisoSoup" ||
-                document.querySelector("#american").value =="tofu" ||
-                document.querySelector("#american").value =="Tofu")
+            if (document.querySelector("#japanese").value =="miso soup" ||
+                document.querySelector("#japanese").value =="Miso Soup" ||
+                document.querySelector("#japanese").value =="tofu" ||
+                document.querySelector("#japanese").value =="Tofu")
                 {
-                    alert("Those are some awesome Japanese dishes!");
+                    alert("That's an awesome Japanese dish!");
                 } 
                 else 
                 {
@@ -67,6 +67,16 @@
     </head>
     <body>
         <form>
+        <h1 style="color: #D2042D;">Japanese Food Culture</h1>
+            <p>
+                Japanese food is very different compared to American dishes in terms of authenticity. In Japan, most food contains soybeans<br>
+                or broth, which makes the dish so flavorful and authentic.<br><br>
+                One famous Japanese dish is fermented soybeans which we eat with rice and other Japanese dishes. We have different soybeans and broth dishes,<br>
+                such as Miso soup or Tofu.<br><br>
+                Japan doesn't have a combination of different countries' cuisines compared to the US since the culture itself is different from the US. 
+                <br><br>
+                    <b>Enter your favorite Japanese dish:</b><input type="text" id="japanese" onchange="japanesefood();">
+            </p>
         <h1 style="color: #0047AB;">American Food Culture</h1>
             <p>
                 The culture of the food in the U.S. can best be described as undefined. With influences from the melting pot of nationalities<br>
@@ -77,16 +87,6 @@
                 However, let's take a look at how two seemingly different cuisines—Japanese and American—and some recipes to go along with them,<br>
                 delving into the commonalities between the two! Enjoy this culinary journey!<br><br>
                     <b>Enter your favorite American dish:</b><input type="text" id="american" onchange="americanfood();">
-            </p>
-            <h1 style="color: #0047AB;">Japanese Food Culture</h1>
-            <p>
-                Japanese food is very different compared to American dishes in terms of authenticity. In Japan, most food contains soybeans<br>
-                or broth, which makes the dish so flavorful and authentic.<br><br>
-                One famous Japanese dish is fermented soybeans which we eat with rice and other Japanese dishes. We have different soybeans and broth dishes,<br>
-                such as Miso soup or Tofu.<br><br>
-                Japan doesn't have a combination of different countries' cuisines compared to the US since the culture itself is different from the US. 
-                <br><br>
-                    <b>Enter your favorite Japanese dish:</b><input type="text" id="japanese" onchange="japanesefood();">
             </p>
         <h2>Fermented Beans (Japanese) and Soybean Chili (American)</h2>
         <table class="tablecaption" border="4">
