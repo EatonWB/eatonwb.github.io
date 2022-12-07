@@ -45,6 +45,20 @@
                     alert("Maybe you could try a hotdog or hamburger!");
                 }
             }
+            function japanesefood()
+            {
+            if (document.querySelector("#american").value =="misosoup" ||
+                document.querySelector("#american").value =="MisoSoup" ||
+                document.querySelector("#american").value =="tofu" ||
+                document.querySelector("#american").value =="Tofu")
+                {
+                    alert("Those are some awesome Japanese dishes!");
+                } 
+                else 
+                {
+                    alert("Have you tried miso soup or tofu?");
+                }
+            }
         </script>
         <!-- Icon made with help from Geeksforgeeks -->
         <link rel = "icon" href = 
@@ -62,7 +76,17 @@
                 is another matter.<br><br>
                 However, let's take a look at how two seemingly different cuisines—Japanese and American—and some recipes to go along with them,<br>
                 delving into the commonalities between the two! Enjoy this culinary journey!<br><br>
-                    Enter your favorite American dish:<input type="text" id="american" onchange="americanfood();">
+                    <b>Enter your favorite American dish:</b><input type="text" id="american" onchange="americanfood();">
+            </p>
+            <h1 style="color: #0047AB;">Japanese Food Culture</h1>
+            <p>
+                Japanese food is very different compared to American dishes in terms of authenticity. In Japan, most food contains soybeans<br>
+                or broth, which makes the dish so flavorful and authentic.<br><br>
+                One famous Japanese dish is fermented soybeans which we eat with rice and other Japanese dishes. We have different soybeans and broth dishes,<br>
+                such as Miso soup or Tofu.<br><br>
+                Japan doesn't have a combination of different countries' cuisines compared to the US since the culture itself is different from the US. 
+                <br><br>
+                    <b>Enter your favorite Japanese dish:</b><input type="text" id="japanese" onchange="japanesefood();">
             </p>
         <h2>Fermented Beans (Japanese) and Soybean Chili (American)</h2>
         <table class="tablecaption" border="4">
